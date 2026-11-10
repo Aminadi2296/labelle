@@ -32,7 +32,7 @@ export default function ServicesPage() {
             <ul className="mt-4 grid gap-x-6 gap-y-1 text-[15px] sm:grid-cols-2">
               {c.items.map((i) => <li key={i}>{i}</li>)}
             </ul>
-            <a href={BOOKING_URL} className="mt-6 inline-block rounded-full bg-rose px-6 py-3 font-semibold text-white">Book free consultation</a>
+            <a href={BOOKING_URL} className="hover-glow mt-6 inline-block rounded-full bg-rose px-6 py-3 font-semibold text-white">Book free consultation</a>
           </section>
         ))}
       </div>

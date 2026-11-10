@@ -55,7 +55,7 @@ export function ContactForm() {
         <input name="consent" type="checkbox" required className="mt-1 size-4" />
         <span>I agree to be contacted by La Belle Medspa about my request. Please do not include medical details in this form.</span>
       </label>
-      <button disabled={status === "sending"} className="rounded-full bg-rose px-7 py-4 font-semibold text-white disabled:opacity-60">
+      <button disabled={status === "sending"} className="hover-glow rounded-full bg-rose px-7 py-4 font-semibold text-white disabled:opacity-60">
         {status === "sending" ? "Sending..." : "Send message"}
       </button>
       {status === "error" && <p role="alert" className="text-sm text-rose">Something went wrong. Please try again or call us.</p>}

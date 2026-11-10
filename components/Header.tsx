@@ -18,7 +18,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <a href={BOOKING_URL} className="rounded-full bg-rose px-5 py-3 text-[15px] font-semibold text-white hover:bg-plum-2 md:px-6">
+          <a href={BOOKING_URL} className="hover-glow rounded-full bg-rose px-5 py-3 text-[15px] font-semibold text-white hover:bg-plum-2 md:px-6">
             Book free consultation
           </a>
           <details className="relative lg:hidden">

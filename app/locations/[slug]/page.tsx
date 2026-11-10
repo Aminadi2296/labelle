@@ -46,7 +46,7 @@ export default async function LocationPage({ params }: Props) {
           </address>
           <a href={`tel:${l.phone.replace(/\D/g, "")}`} className="mt-2 block text-lg font-medium">{l.phone}</a>
           <p className="mt-6 max-w-lg leading-relaxed">Botox®, fillers, laser, facials and more, with a free first consultation. Hablamos español.</p>
-          <a href={`${BOOKING_URL}?location=${l.slug}`} className="mt-8 inline-block rounded-full bg-rose px-7 py-4 font-semibold text-white">Book at {l.city}</a>
+          <a href={`${BOOKING_URL}?location=${l.slug}`} className="hover-glow mt-8 inline-block rounded-full bg-rose px-7 py-4 font-semibold text-white">Book at {l.city}</a>
         </div>
         <iframe
           title={`Map of La Belle Medspa ${l.city}`}

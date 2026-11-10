@@ -16,7 +16,7 @@ export default function MembershipsPage() {
         <div className="mt-2 font-serif text-6xl text-rose">{m.price}</div>
         <p className="mt-1 text-sm text-muted">{m.minimum}</p>
         <ul className="mt-6 list-disc space-y-2 pl-5">{m.perks.map((p) => <li key={p}>{p}</li>)}</ul>
-        <a href={BOOKING_URL} className="mt-8 inline-block rounded-full bg-rose px-7 py-4 font-semibold text-white">Ask about membership</a>
+        <a href={BOOKING_URL} className="hover-glow mt-8 inline-block rounded-full bg-rose px-7 py-4 font-semibold text-white">Ask about membership</a>
       </section>
     </div>
   );
