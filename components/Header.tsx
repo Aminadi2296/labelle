@@ -4,13 +4,13 @@ import { BOOKING_URL, nav } from "@/lib/data";
 export function Header() {
   return (
     <header>
-      <div className="flex flex-wrap justify-between gap-x-7 gap-y-1 bg-plum px-6 py-2.5 text-[13px] text-blush md:px-12">
+      <div className="flex flex-wrap justify-between gap-x-7 gap-y-1 bg-plum px-6 py-2 text-[13px] text-blush md:px-12">
         <span>★ 4.9 Google · 145+ reviews &nbsp;|&nbsp; ★ 5.0 Booksy &nbsp;|&nbsp; 24 years in business</span>
         <span>Hablamos español</span>
       </div>
-      <div className="flex items-center justify-between gap-4 border-b border-line bg-[#FFD4ED] px-6 py-3 md:px-12">
+      <div className="flex items-center justify-between gap-4 border-b border-line px-6 py-3 md:px-12">
         <a href="/" aria-label="La Belle Medspa home" className="shrink-0">
-          <Image src="/logo.svg" alt="La Belle Medspa" width={125} height={66} priority />
+          <Image src="/logo.svg" alt="La Belle Medspa" width={110} height={58} priority />
         </a>
         <nav aria-label="Main" className="hidden gap-7 text-[15px] font-medium lg:flex">
           {nav.map((n) => (
@@ -18,7 +18,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <a href={BOOKING_URL} className="hover-glow rounded-full bg-rose px-5 py-3 text-[15px] font-semibold text-white hover:bg-plum-2 md:px-6">
+          <a href={BOOKING_URL} className="rounded-full bg-rose px-5 py-3 text-[15px] font-semibold text-white hover:bg-plum-2 md:px-6">
             Book free consultation
           </a>
           <details className="relative lg:hidden">

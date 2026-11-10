@@ -16,7 +16,7 @@ export function Special() {
         <div className="text-lg text-muted line-through">$2,500</div>
         <div className="font-serif text-7xl leading-none text-rose">$1,500</div>
         <div className="mb-5 mt-2.5 text-sm text-muted">Financing available</div>
-        <a href={BOOKING_URL} className="hover-glow block rounded-full bg-rose py-4 font-semibold text-white">Book this special</a>
+        <a href={BOOKING_URL} className="block rounded-full bg-rose py-4 font-semibold text-white">Book this special</a>
       </div>
     </section>
   );

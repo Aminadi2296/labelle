@@ -7,6 +7,7 @@ export const nav = [
   { label: "Specials", href: "/#specials" },
   { label: "Financing", href: "/financing" },
   { label: "Locations", href: "/#locations" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const locations = [
