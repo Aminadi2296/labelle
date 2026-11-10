@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BOOKING_URL, nav } from "@/lib/data";
 
 export function Header() {
@@ -7,9 +8,9 @@ export function Header() {
         <span>★ 4.9 Google · 145+ reviews &nbsp;|&nbsp; ★ 5.0 Booksy &nbsp;|&nbsp; 24 years in business</span>
         <span>Hablamos español</span>
       </div>
-      <div className="flex items-center justify-between gap-4 border-b border-line px-6 py-5 md:px-12">
-        <a href="/" className="font-serif text-3xl font-medium text-plum">
-          La Belle <span className="text-[13px] uppercase tracking-[0.3em]">Medspa</span>
+      <div className="flex items-center justify-between gap-4 border-b border-line bg-[#FFD4ED] px-6 py-3 md:px-12">
+        <a href="/" aria-label="La Belle Medspa home" className="shrink-0">
+          <Image src="/logo.svg" alt="La Belle Medspa" width={125} height={66} priority />
         </a>
         <nav aria-label="Main" className="hidden gap-7 text-[15px] font-medium lg:flex">
           {nav.map((n) => (
