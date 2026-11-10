@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CHERRY_URL } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "0% Financing | La Belle Medspa",
@@ -16,7 +17,14 @@ export default function FinancingPage() {
         <li>You must be 18 or older</li>
         <li>You need a bank-issued credit or debit card</li>
       </ul>
-      {/* TODO: enlace de solicitud de Cherry (pedir al cliente) */}
+      <a
+        href={`${CHERRY_URL}?utm_source=website`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-10 inline-block rounded-full bg-rose px-7 py-4 font-semibold text-white"
+      >
+        Apply for financing with Cherry
+      </a>
     </div>
   );
 }

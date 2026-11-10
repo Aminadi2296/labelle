@@ -4,9 +4,9 @@ import { BOOKING_URL, locations } from "@/lib/data";
 export function Hero() {
   return (
     <section className="grid bg-plum text-white lg:grid-cols-2">
-      <div className="flex flex-col justify-center gap-6 px-6 py-16 md:px-14 md:py-20">
+      <div className="flex flex-col justify-center gap-4 px-6 py-10 md:px-14 md:py-12 lg:gap-3 lg:py-3">
         <p className="text-sm text-[#f0b6d3]">Limited-time offer · Includes free lips</p>
-        <h1 className="font-serif text-6xl font-medium leading-[1.02] md:text-7xl">
+        <h1 className="font-serif text-5xl font-medium leading-[1.02] md:text-6xl lg:text-5xl xl:text-6xl">
           Botox® 50 units
           <br />
           for $350
@@ -27,14 +27,14 @@ export function Hero() {
           ))}
         </div>
       </div>
-      <div className="relative min-h-[360px] lg:min-h-[540px]">
+      <div className="relative h-[360px] md:h-[440px] lg:h-[560px]">
         <Image
-          src="/hero.png"
+          src="/hero.webp"
           alt="Three smiling clients with glowing skin"
           fill
           priority
           sizes="(min-width:1024px) 50vw, 100vw"
-          className="object-cover object-[center_30%]"
+          className="object-cover object-[center_60%]"
         />
       </div>
     </section>

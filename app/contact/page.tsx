@@ -20,7 +20,7 @@ export default function ContactPage() {
               <a href={`/locations/${l.slug}`} className="font-serif text-2xl text-plum">{l.name}</a>
               <p className="mt-1 text-muted">{l.address}, {l.zip}</p>
               <div className="mt-4 flex flex-wrap gap-3 text-sm font-semibold">
-                <a href={`tel:${l.phone.replace(/\D/g, "")}`} className="hover-glow rounded-full bg-rose px-5 py-2.5 text-white">Call {l.phone}</a>
+                <a href={`tel:${l.phone.replace(/\D/g, "")}`} className="rounded-full bg-rose px-5 py-2.5 text-white">Call {l.phone}</a>
                 <a href={l.mapsUrl} className="rounded-full border border-line px-5 py-2.5">Get directions</a>
               </div>
             </div>
