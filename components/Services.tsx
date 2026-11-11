@@ -1,19 +1,53 @@
-"use client";
-import Image from "next/image";
-import { useState } from "react";
+'use client';
+import Image from 'next/image';
+import { useState } from 'react';
 
 // Imágenes en public/services/ (formato WebP)
 const services = [
-  { name: "Botox®", blurb: "Smooth fine lines with natural-looking results. $10/unit.", href: "/services#injectables", image: "/services/botox.webp" },
-  { name: "Lip fillers", blurb: "Fuller, more defined lips, customized to your face.", href: "/services#fillers", image: "/services/lip-fillers.webp" },
-  { name: "RF Microneedling", blurb: "Tighter, glowing skin with PDRN Salmon DNA. $399.", href: "/services#facials", image: "/services/rf-microneedling.webp" },
-  { name: "Laser hair removal", blurb: "Long-lasting smoothness, after a free consultation.", href: "/services#laser", image: "/services/laser-hair-removal.webp" },
-  { name: "Hydrafacial", blurb: "Cleanse, exfoliate and hydrate for an instant glow. $199.", href: "/services#facials", image: "/services/hydrafacial.webp" },
+  {
+    name: 'Botox®',
+    blurb: 'Smooth fine lines with natural-looking results. $10/unit.',
+    href: '/services#injectables',
+    image: '/services/botox.webp',
+  },
+  {
+    name: 'Lip fillers',
+    blurb: 'Fuller, more defined lips, customized to your face.',
+    href: '/services#fillers',
+    image: '/services/lip-fillers.webp',
+  },
+  {
+    name: 'RF Microneedling',
+    blurb: 'Tighter, glowing skin with PDRN Salmon DNA. $399.',
+    href: '/services#facials',
+    image: '/services/rf-microneedling.webp',
+  },
+  {
+    name: 'Laser hair removal',
+    blurb: 'Long-lasting smoothness, after a free consultation.',
+    href: '/services#laser',
+    image: '/services/laser-hair-removal.webp',
+  },
+  {
+    name: 'Hydrafacial',
+    blurb: 'Cleanse, exfoliate and hydrate for an instant glow. $199.',
+    href: '/services#facials',
+    image: '/services/hydrafacial.webp',
+  },
 ];
 
-function Arrow({ className = "" }: { className?: string }) {
+function Arrow({ className = '' }: { className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className={`size-5 ${className}`} fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      className={`size-5 ${className}`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="M7 17 17 7M8 7h9v9" />
     </svg>
   );
@@ -26,12 +60,19 @@ export function Services() {
     <section id="services" className="px-6 py-16 md:px-12 md:py-20">
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h2 className="font-serif text-4xl font-medium text-plum md:text-5xl">Popular services</h2>
+          <h2 className="font-serif text-4xl font-medium text-plum md:text-5xl">
+            Popular Services
+          </h2>
           <p className="mt-2 text-muted">Find your treatment in one click.</p>
         </div>
 
-        <a href="/services" className="group/cta flex items-center gap-3 font-semibold text-plum">
-          <span className="transition-colors duration-300 group-hover/cta:text-rose">View all services</span>
+        <a
+          href="/services"
+          className="group/cta flex items-center gap-3 font-semibold text-plum"
+        >
+          <span className="transition-colors duration-300 group-hover/cta:text-rose">
+            View all services
+          </span>
           <span className="relative grid size-12 place-items-center overflow-hidden rounded-full bg-plum text-white transition-colors duration-300 group-hover/cta:bg-rose">
             {/* La flecha sale por arriba a la derecha y otra entra desde abajo a la izquierda */}
             <Arrow className="transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover/cta:translate-x-8 group-hover/cta:-translate-y-8 motion-reduce:transition-none" />
@@ -58,26 +99,28 @@ export function Services() {
                 fill
                 sizes="(min-width:768px) 45vw, 100vw"
                 className={`object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
-                  open ? "md:scale-[1.02]" : "md:scale-100"
+                  open ? 'md:scale-[1.02]' : 'md:scale-100'
                 }`}
               />
 
               {/* Difuminado para dar contraste al texto */}
               <div
                 className={`absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-black/85 via-black/40 to-transparent transition-opacity duration-700 motion-reduce:transition-none ${
-                  open ? "opacity-100" : "md:opacity-80"
+                  open ? 'opacity-100' : 'md:opacity-80'
                 }`}
               />
 
               <div className="absolute inset-x-0 bottom-0 p-5">
-                <h3 className="text-balance font-serif text-2xl leading-tight md:text-2xl">{s.name}</h3>
+                <h3 className="text-balance font-serif text-2xl leading-tight md:text-2xl">
+                  {s.name}
+                </h3>
 
                 {/* Descripción: se despliega y aparece con fundido (en móvil siempre visible) */}
                 <div
                   className={`grid transition-[grid-template-rows,opacity,transform] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
                     open
-                      ? "grid-rows-[1fr] opacity-100 md:translate-y-0"
-                      : "grid-rows-[1fr] opacity-100 md:grid-rows-[0fr] md:translate-y-2 md:opacity-0"
+                      ? 'grid-rows-[1fr] opacity-100 md:translate-y-0'
+                      : 'grid-rows-[1fr] opacity-100 md:grid-rows-[0fr] md:translate-y-2 md:opacity-0'
                   }`}
                 >
                   <p className="overflow-hidden text-sm text-white/85">

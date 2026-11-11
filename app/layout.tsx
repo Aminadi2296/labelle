@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Inter } from "next/font/google";
+import { Instrument_Sans, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 const serif = Instrument_Serif({ subsets: ["latin"], weight: ["400"], variable: "--font-instrument-serif" });
-const sans = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const sans = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument-sans" });
 
 export const metadata: Metadata = {
   title: "La Belle Medspa | Botox, Fillers & Laser in Irvine, Tustin & Henderson",
