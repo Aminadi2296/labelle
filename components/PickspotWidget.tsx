@@ -33,7 +33,7 @@ export function PickspotWidget() {
     window.PickspotWidget.init({
       slug: 'labelle-medspa',
       baseUrl: PICKSPOT_BASE_URL,
-      floatingButton: true,
+      floatingButton: false,
       buttonText: '📅 Book Appointment',
       primaryColor: '#55002D',
     });
