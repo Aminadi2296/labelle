@@ -53,6 +53,7 @@ export function Locations() {
                 </a>
                 <a
                   href={`${BOOKING_URL}?location=${l.slug}`}
+                  data-pickspot-open
                   className="pointer-events-auto relative flex items-center gap-2 rounded-full bg-white py-2 pl-5 pr-2 text-sm font-semibold text-ink"
                 >
                   Book now

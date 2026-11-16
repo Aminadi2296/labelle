@@ -44,7 +44,7 @@ export default async function ServicePage({ params }: Props) {
           {s.duration && <p className="text-sm text-[#ebd3e0]">Appointment time: {s.duration}</p>}
           {s.note && <p className="max-w-md rounded-2xl bg-plum-2 px-5 py-3 text-sm">{s.note}</p>}
           <div className="flex flex-wrap gap-3.5">
-            <a href={BOOKING_URL} className="rounded-full bg-white px-7 py-4 font-semibold text-plum">Book free consultation</a>
+            <a href={BOOKING_URL} data-pickspot-open className="rounded-full bg-white px-7 py-4 font-semibold text-plum">Book free consultation</a>
             <a href="/financing" className="rounded-full border-[1.5px] border-[#f0b6d3] px-7 py-4">Financing options</a>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default async function ServicePage({ params }: Props) {
         <h2 className="mb-6 font-serif text-3xl text-plum">Book at your nearest location</h2>
         <div className="flex flex-wrap gap-3">
           {locations.map((l) => (
-            <a key={l.slug} href={`${BOOKING_URL}?location=${l.slug}&service=${s.slug}`} className="rounded-full bg-rose px-6 py-3 font-semibold text-white">{l.name}</a>
+            <a key={l.slug} href={`${BOOKING_URL}?location=${l.slug}&service=${s.slug}`} data-pickspot-open className="rounded-full bg-rose px-6 py-3 font-semibold text-white">{l.name}</a>
           ))}
         </div>
         <h2 className="mb-4 mt-12 font-serif text-3xl text-plum">Other services</h2>
