@@ -1,9 +1,15 @@
+import Image from "next/image";
 import { locations, SITE_URL } from "@/lib/data";
 
 export function Footer() {
   return (
     <footer className="bg-plum px-6 py-10 text-sm text-[#ebd3e0] md:px-12">
-      <div className="grid gap-8 md:grid-cols-3">
+      <div className="grid gap-8 md:grid-cols-4 md:items-center">
+        <div>
+          <a href="/" aria-label="La Belle Medspa home" className="inline-block">
+            <Image src="/logo.svg" alt="La Belle Medspa" width={190} height={100} />
+          </a>
+        </div>
         {locations.map((l) => (
           <div key={l.slug}>
             <a href={`/locations/${l.slug}`} className="font-serif text-2xl text-white">{l.name}</a>

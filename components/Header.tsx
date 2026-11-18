@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header>
       <div className="flex flex-wrap justify-between gap-x-7 gap-y-1 bg-plum px-6 py-2 text-[13px] text-blush md:px-12">
-        <span>★ 4.9 Google · 145+ reviews &nbsp;|&nbsp; ★ 5.0 Booksy &nbsp;|&nbsp; 24 years in business</span>
+        <span>★ 4.9 Google · 145+ reviews &nbsp;|&nbsp; 24 years in business</span>
         <span>Hablamos español</span>
       </div>
       <div className="flex items-center justify-between gap-4 border-b border-line px-6 py-3 md:px-12">
