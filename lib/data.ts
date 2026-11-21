@@ -78,7 +78,7 @@ export const services = [
     href: '/services#laser',
   },
   {
-    name: 'Hydrafacial',
+    name: 'Geneo facial',
     blurb: 'Instant glow. $199.',
     href: '/services#facials',
   },
@@ -90,7 +90,7 @@ export const serviceMenu = [
   { name: 'Versa filler', price: '$499' },
   { name: 'Carbon laser facial', price: '$199' },
   { name: 'IPL photofacial', price: '$199' },
-  { name: 'Hydrafacial', price: '$199' },
+  { name: 'Geneo facial', price: '$199' },
   { name: 'RF Microneedling with PDRN Salmon DNA', price: '$399' },
   { name: 'Sculptra®', price: '$699' },
 ];
@@ -136,7 +136,7 @@ export const serviceCategories = [
       'PRP plasma',
       'Radio frequency + oxygen therapy',
       'Infusion Dr. Murad with vitamin C',
-      'Hydrafacial',
+      'Geneo facial',
       'IPL laser treatments',
       'RF Microneedling',
       'Microdermabrasion',
@@ -242,7 +242,7 @@ export const membership = {
   price: '$399/mo',
   minimum: '6-month minimum',
   perks: [
-    'Hydrafacial or medical facial every month',
+    'Geneo facial or medical facial every month',
     'RF Microneedling with exosomes (use it or save it)',
     '20 Botox® units banked toward your balance',
     '15% off Botox® and fillers',

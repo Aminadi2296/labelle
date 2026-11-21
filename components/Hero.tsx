@@ -21,7 +21,7 @@ export function Hero() {
         <div className="flex flex-wrap items-center gap-2.5 text-sm text-[#ebd3e0]">
           <span>Choose your location:</span>
           {locations.map((l) => (
-            <a key={l.slug} href={`${BOOKING_URL}?location=${l.slug}`} data-pickspot-open className="hover-glow rounded-full bg-plum-2 px-4 py-2.5">
+            <a key={l.slug} href={`/locations/${l.slug}`} className="hover-glow rounded-full bg-plum-2 px-4 py-2.5">
               {l.name.split(",")[0]}
             </a>
           ))}

@@ -29,8 +29,8 @@ const services = [
     image: '/services/laser-hair-removal.webp',
   },
   {
-    name: 'Hydrafacial',
-    blurb: 'Cleanse, exfoliate and hydrate for an instant glow. $199.',
+    name: 'Geneo facial',
+    blurb: 'Exfoliate, oxygenate and nourish for an instant glow. $199.',
     href: '/services#facials',
     image: '/services/hydrafacial.webp',
   },

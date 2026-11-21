@@ -4,7 +4,7 @@ import { BOOKING_URL } from "@/lib/data";
 const mensTreatments = [
   'Botox® ("Brotox")',
   "Jawline & chin contouring",
-  "Hydrafacial & deep pore care",
+  "Geneo facial & deep pore care",
   "Laser hair removal",
   "RF Microneedling & PRP",
   "Acne & skin rejuvenation",

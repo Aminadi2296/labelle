@@ -26,13 +26,13 @@ export const servicePages: ServicePage[] = [
     treatments: ["Botox®", "Xeomin", "Dysport", "Male Botox®"],
   },
   {
-    slug: "hydrafacial",
-    name: "Hydrafacial",
-    summary: "Cleanse, exfoliate and hydrate for an instant glow, with no downtime to plan around.",
+    slug: "geneo-facial",
+    name: "Geneo facial",
+    summary: "Exfoliate, oxygenate and nourish for an instant glow, with no downtime to plan around.",
     price: "$199",
     image: "/services/hydrafacial.webp",
     category: "facials",
-    treatments: ["Hydrafacial", "Medical facial"],
+    treatments: ["Geneo facial", "Medical facial"],
   },
   {
     slug: "plastic-surgery",
@@ -94,7 +94,7 @@ export const servicePages: ServicePage[] = [
     image: "/services/iv-drip.webp",
     category: "facials",
     duration: "50 to 80 minutes in total",
-    note: "Free Hydrafacial with every 1000 ml IV drip session on Fridays and Saturdays, by appointment only.",
+    note: "Free Geneo facial with every 1000 ml IV drip session on Fridays and Saturdays, by appointment only.",
     treatments: ["Basic hydration", "Hangover relief", "Beauty glow", "Energy boost", "Athletic performance", "Immunity boost"],
     highlightsTitle: "Types of IV drip",
     highlights: [
