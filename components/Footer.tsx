@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { locations, SITE_URL } from "@/lib/data";
+import { locations } from "@/lib/data";
 
 export function Footer() {
   return (
@@ -21,10 +21,10 @@ export function Footer() {
       <div className="mt-8 flex flex-wrap justify-between gap-3 border-t border-plum-2 pt-6 text-[13px]">
         <span>© {new Date().getFullYear()} La Belle Medspa. Results may vary from person to person.</span>
         <span className="flex flex-wrap gap-4">
-          <a href={`${SITE_URL}/notice-of-privacy-practices-hipaa`}>HIPAA notice</a>
-          <a href={`${SITE_URL}/privacy-policy`}>Privacy</a>
-          <a href={`${SITE_URL}/cookies-policy`}>Cookies</a>
-          <a href={`${SITE_URL}/website-accessibility-policy`}>Accessibility</a>
+          <a href="/notice-of-privacy-practices-hipaa">HIPAA notice</a>
+          <a href="/privacy-policy">Privacy</a>
+          <a href="/cookies-policy">Cookies</a>
+          <a href="/website-accessibility-policy">Accessibility</a>
         </span>
       </div>
     </footer>

@@ -4,11 +4,13 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PickspotWidget } from "@/components/PickspotWidget";
+import { SITE_URL } from "@/lib/data";
 
 const serif = Instrument_Serif({ subsets: ["latin"], weight: ["400"], variable: "--font-instrument-serif" });
 const sans = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument-sans" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "La Belle Medspa | Botox, Fillers & Laser in Irvine, Tustin & Henderson",
   description: "Medical spa in Irvine, Tustin and Henderson, NV. Botox, fillers, RF microneedling, laser and plastic surgery. Book a free consultation.",
   openGraph: { title: "La Belle Medspa", description: "Book a free consultation online.", type: "website" },
