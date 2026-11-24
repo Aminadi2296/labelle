@@ -69,12 +69,12 @@ export const services = [
   },
   {
     name: 'RF Microneedling',
-    blurb: 'Tighter, glowing skin. $399.',
+    blurb: 'Tighter, glowing skin. $299.',
     href: '/services#facials',
   },
   {
     name: 'Laser hair removal',
-    blurb: 'Long-lasting smoothness.',
+    blurb: 'Long-lasting smoothness. From $199.',
     href: '/services#laser',
   },
   {
@@ -86,13 +86,31 @@ export const services = [
 
 export const serviceMenu = [
   { name: 'Botox®', price: '$10/unit' },
-  { name: 'Radiesse filler', price: '$499' },
-  { name: 'Versa filler', price: '$499' },
-  { name: 'Carbon laser facial', price: '$199' },
-  { name: 'IPL photofacial', price: '$199' },
-  { name: 'Geneo facial', price: '$199' },
-  { name: 'RF Microneedling with PDRN Salmon DNA', price: '$399' },
-  { name: 'Sculptra®', price: '$699' },
+  { name: 'Botox® Special (40 units)', price: '$299' },
+  { name: 'Botox® (50 units)', price: '$350' },
+  { name: 'Botox® (60 units)', price: '$399' },
+  { name: 'Dysport®', price: '$5/unit' },
+  { name: 'Dermal Filler (1 cc)', price: '$499' },
+  { name: 'Dermal Filler (0.5 cc)', price: '$299' },
+  { name: 'Sculptra® 1 vial (8 cc)', price: '$699' },
+  { name: 'Sculptra® 2 vials (16 cc)', price: '$999' },
+  { name: 'Fractional RF Microneedling', price: '$299' },
+  { name: 'Fractional RF Microneedling + Exosomes', price: '$399' },
+  { name: 'Fractional RF Microneedling + Vamp Booster', price: '$499' },
+  { name: 'Fractional RF Microneedling + PRP Plasma', price: '$499' },
+  { name: 'Geneo® facial', price: '$199' },
+  { name: 'Thermage', price: '$299' },
+  { name: 'Carbon laser (CA only)', price: '$199' },
+  { name: 'IPL laser (CA only)', price: '$199' },
+  { name: 'CO2 laser (CA only)', price: '$299' },
+  { name: 'Endolaser (CA only)', price: '$2,999' },
+  { name: 'Laser hair removal', price: 'From $199' },
+];
+
+export const menuPromos = [
+  'Get a free facial when you spend $399.',
+  'Get Fractional RF Microneedling FREE when you purchase 2 vials of Sculptra® ($999).',
+  'Laser treatments (Carbon, IPL, CO2, Endolaser) available at California locations only.',
 ];
 
 export const serviceCategories = [
@@ -237,16 +255,37 @@ export const faqs = [
   },
 ];
 
-export const membership = {
-  name: 'Elite membership',
-  price: '$399/mo',
-  minimum: '6-month minimum',
-  perks: [
-    'Geneo facial or medical facial every month',
-    'RF Microneedling with exosomes (use it or save it)',
-    '20 Botox® units banked toward your balance',
-    '15% off Botox® and fillers',
-  ],
-};
+export const memberships = [
+  {
+    name: 'VIP Beauty Membership',
+    badge: '6-Month Package',
+    price: '$2,500',
+    regularValue: null as string | null,
+    minimum: '6-month term · No automatic renewal',
+    description: 'Lift · Tighten · Glow. A 6-month curated treatment plan for full-face rejuvenation.',
+    perks: [
+      '100 units Botox® total',
+      '3 dermal filler syringes (1 mL each)',
+      '6 cc Sculptra®',
+      '3 Fractional RF Microneedling sessions',
+      '3 Geneo® facials',
+    ],
+    paymentNote:
+      'Pay in full ($2,500 upfront) or apply for Cherry 6-month, 0% APR financing (~$416.67/mo with no down payment, subject to approval).',
+  },
+  {
+    name: 'Sculptra® Membership — Collagen Club',
+    badge: '12-Month Membership',
+    price: '$1,999',
+    regularValue: '$3,500',
+    minimum: '12-month term · Boost Collagen · Lift & Firm · Improve Skin Quality',
+    description: 'Build collagen naturally and restore lost volume for a lifted, firmer and more youthful look.',
+    perks: [
+      'Sculptra® 2 cc per treatment',
+      '6 Fractional RF Microneedling sessions with Exosomes',
+    ],
+    paymentNote: 'Ask our team about payment options and Cherry financing availability.',
+  },
+];
 
 export const CHERRY_URL = 'https://pay.withcherry.com/labelleoc';

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BOOKING_URL, serviceCategories, serviceMenu } from "@/lib/data";
+import { BOOKING_URL, menuPromos, serviceCategories, serviceMenu } from "@/lib/data";
 import { servicePages } from "@/lib/service-pages";
 
 export const metadata: Metadata = {
@@ -37,6 +37,11 @@ export default function ServicesPage() {
             </div>
           ))}
         </dl>
+        <ul className="mt-6 space-y-1 text-sm text-plum">
+          {menuPromos.map((promo) => (
+            <li key={promo}>• {promo}</li>
+          ))}
+        </ul>
       </section>
 
       <div className="mt-14 grid gap-10 md:grid-cols-2">

@@ -18,13 +18,13 @@ const services = [
   },
   {
     name: 'RF Microneedling',
-    blurb: 'Tighter, glowing skin with PDRN Salmon DNA. $399.',
+    blurb: 'Tighter, glowing skin with Fractional RF Microneedling. $299.',
     href: '/services#facials',
     image: '/services/rf-microneedling.webp',
   },
   {
     name: 'Laser hair removal',
-    blurb: 'Long-lasting smoothness, after a free consultation.',
+    blurb: 'Long-lasting smoothness starting at $199, after a free consultation.',
     href: '/services#laser',
     image: '/services/laser-hair-removal.webp',
   },
